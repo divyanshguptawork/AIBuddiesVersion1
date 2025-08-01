@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC007D072E2870C0005F52A6 /* LeoPalCalendarChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC007D062E2870BF005F52A6 /* LeoPalCalendarChecker.swift */; };
+		FC007D092E288B87005F52A6 /* String+Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC007D082E288B87005F52A6 /* String+Markdown.swift */; };
+		FC007D102E28A061005F52A6 /* MessageHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC007D0F2E28A061005F52A6 /* MessageHistoryManager.swift */; };
+		FC007D142E299A07005F52A6 /* CosmicScoutDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC007D132E299A07005F52A6 /* CosmicScoutDataFetcher.swift */; };
+		FC2427F32E2C38DE00EFE446 /* GoogleCalendarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2427F22E2C38DE00EFE446 /* GoogleCalendarAPI.swift */; };
+		FC2EAC632E207AEE00B3F32E /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EAC602E207AEE00B3F32E /* OAuthManager.swift */; };
+		FC2EAC642E207AEE00B3F32E /* MainLeoPalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EAC612E207AEE00B3F32E /* MainLeoPalView.swift */; };
+		FC2EAC652E207AEE00B3F32E /* FirstLaunchPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EAC622E207AEE00B3F32E /* FirstLaunchPromptView.swift */; };
+		FC30AFD92E344F5B000C161D /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FC30AFD82E344F5B000C161D /* AppAuth */; };
+		FC30AFDC2E344F6D000C161D /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = FC30AFDB2E344F6D000C161D /* GoogleGenerativeAI */; };
+		FC30AFDE2E345E3F000C161D /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30AFDD2E345E3F000C161D /* ChatMessage.swift */; };
+		FC3ACEC02E398C16003A78CB /* NaturalLanguage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ACEBF2E398C15003A78CB /* NaturalLanguage.framework */; };
+		FC829B3B2E26F79B0064C242 /* ReminderDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC829B3A2E26F79B0064C242 /* ReminderDatabase.swift */; };
+		FC829B3D2E26F7AF0064C242 /* LeoPalEmailChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC829B3C2E26F7AF0064C242 /* LeoPalEmailChecker.swift */; };
+		FC829B3F2E26F8550064C242 /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC829B3E2E26F8550064C242 /* GmailAPI.swift */; };
+		FC829B412E27455A0064C242 /* BuddyChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC829B402E27455A0064C242 /* BuddyChatManager.swift */; };
+		FC98A6182E143E6900DC2B18 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98A6172E143E6900DC2B18 /* MessageBubble.swift */; };
+		FC98A61A2E143E7C00DC2B18 /* BuddyChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98A6192E143E7C00DC2B18 /* BuddyChatView.swift */; };
+		FC98A61E2E14A0E200DC2B18 /* BuddyWithInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98A61D2E14A0E200DC2B18 /* BuddyWithInterval.swift */; };
+		FC98A6202E14A17900DC2B18 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98A61F2E14A17900DC2B18 /* BlurView.swift */; };
+		FC98A6222E14ADFA00DC2B18 /* BuddyIntervalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98A6212E14ADFA00DC2B18 /* BuddyIntervalManager.swift */; };
+		FC9F075A2E2B3D8F00F62146 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9F07592E2B3D8F00F62146 /* LocationManager.swift */; };
+		FC9F592B2E01CEF800224969 /* BuddyWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9F592A2E01CEF800224969 /* BuddyWindowManager.swift */; };
+		FCA34CB72E385B37008DC4DF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA34CB62E385B37008DC4DF /* NotificationManager.swift */; };
+		FCA452832E3195D700A52741 /* CosmicScoutModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA452822E3195D700A52741 /* CosmicScoutModels.swift */; };
+		FCC994302E1ED00A00CD3751 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC9942F2E1ED00A00CD3751 /* MessageInputView.swift */; };
+		FCC994322E1ED01B00CD3751 /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC994312E1ED01B00CD3751 /* GrowingTextView.swift */; };
+		FCCA13562E24A60400379AAF /* OAuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCA13552E24A60400379AAF /* OAuthConfig.swift */; };
+		FCCE19AF2E0520D2001F7C07 /* buddyPositions.json in Resources */ = {isa = PBXBuildFile; fileRef = FCCE19AE2E0520D2001F7C07 /* buddyPositions.json */; };
+		FCCE19B12E05FEEA001F7C07 /* ScreenOCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE19B02E05FEEA001F7C07 /* ScreenOCR.swift */; };
+		FCCE19B32E05FFB5001F7C07 /* AIReactionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE19B22E05FFB5001F7C07 /* AIReactionEngine.swift */; };
+		FCCE19B52E060474001F7C07 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCCE19B42E060474001F7C07 /* Secrets.plist */; };
+		FCCE19B72E0606B3001F7C07 /* BuddyMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE19B62E0606B3001F7C07 /* BuddyMessenger.swift */; };
+		FCD91A452DFF9CAF0076EB4D /* AIBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A442DFF9CAF0076EB4D /* AIBuddyApp.swift */; };
+		FCD91A472DFF9CAF0076EB4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A462DFF9CAF0076EB4D /* ContentView.swift */; };
+		FCD91A492DFF9CB50076EB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD91A482DFF9CB50076EB4D /* Assets.xcassets */; };
+		FCD91A4C2DFF9CB50076EB4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD91A4B2DFF9CB50076EB4D /* Preview Assets.xcassets */; };
+		FCD91A572DFF9CB50076EB4D /* AIBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A562DFF9CB50076EB4D /* AIBuddyTests.swift */; };
+		FCD91A612DFF9CB50076EB4D /* AIBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A602DFF9CB50076EB4D /* AIBuddyUITests.swift */; };
+		FCD91A632DFF9CB50076EB4D /* AIBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A622DFF9CB50076EB4D /* AIBuddyUITestsLaunchTests.swift */; };
+		FCD91A712E00883C0076EB4D /* buddies.json in Resources */ = {isa = PBXBuildFile; fileRef = FCD91A702E00883C0076EB4D /* buddies.json */; };
+		FCD91A752E0088CF0076EB4D /* BuddyDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A742E0088CF0076EB4D /* BuddyDock.swift */; };
+		FCD91A772E0088E50076EB4D /* BuddyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD91A762E0088E50076EB4D /* BuddyCard.swift */; };
+		FCEAC1752E34816B00F28CC3 /* BuddyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAC1742E34816B00F28CC3 /* BuddyModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCD91A532DFF9CB50076EB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD91A392DFF9CAF0076EB4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD91A402DFF9CAF0076EB4D;
+			remoteInfo = AIBuddy;
+		};
+		FCD91A5D2DFF9CB50076EB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD91A392DFF9CAF0076EB4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD91A402DFF9CAF0076EB4D;
+			remoteInfo = AIBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC007D062E2870BF005F52A6 /* LeoPalCalendarChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoPalCalendarChecker.swift; sourceTree = "<group>"; };
+		FC007D082E288B87005F52A6 /* String+Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Markdown.swift"; sourceTree = "<group>"; };
+		FC007D0F2E28A061005F52A6 /* MessageHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHistoryManager.swift; sourceTree = "<group>"; };
+		FC007D132E299A07005F52A6 /* CosmicScoutDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicScoutDataFetcher.swift; sourceTree = "<group>"; };
+		FC2427F22E2C38DE00EFE446 /* GoogleCalendarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCalendarAPI.swift; sourceTree = "<group>"; };
+		FC2EAC602E207AEE00B3F32E /* OAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthManager.swift; sourceTree = "<group>"; };
+		FC2EAC612E207AEE00B3F32E /* MainLeoPalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLeoPalView.swift; sourceTree = "<group>"; };
+		FC2EAC622E207AEE00B3F32E /* FirstLaunchPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLaunchPromptView.swift; sourceTree = "<group>"; };
+		FC30AFDD2E345E3F000C161D /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		FC3ACEBF2E398C15003A78CB /* NaturalLanguage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguage.framework; path = System/Library/Frameworks/NaturalLanguage.framework; sourceTree = SDKROOT; };
+		FC829B3A2E26F79B0064C242 /* ReminderDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDatabase.swift; sourceTree = "<group>"; };
+		FC829B3C2E26F7AF0064C242 /* LeoPalEmailChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoPalEmailChecker.swift; sourceTree = "<group>"; };
+		FC829B3E2E26F8550064C242 /* GmailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailAPI.swift; sourceTree = "<group>"; };
+		FC829B402E27455A0064C242 /* BuddyChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyChatManager.swift; sourceTree = "<group>"; };
+		FC98A6172E143E6900DC2B18 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		FC98A6192E143E7C00DC2B18 /* BuddyChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyChatView.swift; sourceTree = "<group>"; };
+		FC98A61D2E14A0E200DC2B18 /* BuddyWithInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyWithInterval.swift; sourceTree = "<group>"; };
+		FC98A61F2E14A17900DC2B18 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		FC98A6212E14ADFA00DC2B18 /* BuddyIntervalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyIntervalManager.swift; sourceTree = "<group>"; };
+		FC9F07592E2B3D8F00F62146 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FC9F592A2E01CEF800224969 /* BuddyWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyWindowManager.swift; sourceTree = "<group>"; };
+		FCA34CB62E385B37008DC4DF /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		FCA452822E3195D700A52741 /* CosmicScoutModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicScoutModels.swift; sourceTree = "<group>"; };
+		FCC9942F2E1ED00A00CD3751 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		FCC994312E1ED01B00CD3751 /* GrowingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextView.swift; sourceTree = "<group>"; };
+		FCCA13552E24A60400379AAF /* OAuthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthConfig.swift; sourceTree = "<group>"; };
+		FCCE19AE2E0520D2001F7C07 /* buddyPositions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buddyPositions.json; sourceTree = "<group>"; };
+		FCCE19B02E05FEEA001F7C07 /* ScreenOCR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOCR.swift; sourceTree = "<group>"; };
+		FCCE19B22E05FFB5001F7C07 /* AIReactionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIReactionEngine.swift; sourceTree = "<group>"; };
+		FCCE19B42E060474001F7C07 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		FCCE19B62E0606B3001F7C07 /* BuddyMessenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyMessenger.swift; sourceTree = "<group>"; };
+		FCD91A412DFF9CAF0076EB4D /* AIBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD91A442DFF9CAF0076EB4D /* AIBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBuddyApp.swift; sourceTree = "<group>"; };
+		FCD91A462DFF9CAF0076EB4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCD91A482DFF9CB50076EB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCD91A4B2DFF9CB50076EB4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCD91A4D2DFF9CB50076EB4D /* AIBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIBuddy.entitlements; sourceTree = "<group>"; };
+		FCD91A522DFF9CB50076EB4D /* AIBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD91A562DFF9CB50076EB4D /* AIBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBuddyTests.swift; sourceTree = "<group>"; };
+		FCD91A5C2DFF9CB50076EB4D /* AIBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD91A602DFF9CB50076EB4D /* AIBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBuddyUITests.swift; sourceTree = "<group>"; };
+		FCD91A622DFF9CB50076EB4D /* AIBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCD91A702E00883C0076EB4D /* buddies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buddies.json; sourceTree = "<group>"; };
+		FCD91A742E0088CF0076EB4D /* BuddyDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyDock.swift; sourceTree = "<group>"; };
+		FCD91A762E0088E50076EB4D /* BuddyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyCard.swift; sourceTree = "<group>"; };
+		FCEAC1742E34816B00F28CC3 /* BuddyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCD91A3E2DFF9CAF0076EB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC30AFD92E344F5B000C161D /* AppAuth in Frameworks */,
+				FC3ACEC02E398C16003A78CB /* NaturalLanguage.framework in Frameworks */,
+				FC30AFDC2E344F6D000C161D /* GoogleGenerativeAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD91A4F2DFF9CB50076EB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD91A592DFF9CB50076EB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC3ACEBE2E398C15003A78CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ACEBF2E398C15003A78CB /* NaturalLanguage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCD91A382DFF9CAF0076EB4D = {
+			isa = PBXGroup;
+			children = (
+				FCD91A432DFF9CAF0076EB4D /* AIBuddy */,
+				FCD91A552DFF9CB50076EB4D /* AIBuddyTests */,
+				FCD91A5F2DFF9CB50076EB4D /* AIBuddyUITests */,
+				FCD91A422DFF9CAF0076EB4D /* Products */,
+				FC3ACEBE2E398C15003A78CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCD91A422DFF9CAF0076EB4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCD91A412DFF9CAF0076EB4D /* AIBuddy.app */,
+				FCD91A522DFF9CB50076EB4D /* AIBuddyTests.xctest */,
+				FCD91A5C2DFF9CB50076EB4D /* AIBuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCD91A432DFF9CAF0076EB4D /* AIBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				FCD91A4D2DFF9CB50076EB4D /* AIBuddy.entitlements */,
+				FCD91A442DFF9CAF0076EB4D /* AIBuddyApp.swift */,
+				FCCE19B22E05FFB5001F7C07 /* AIReactionEngine.swift */,
+				FC30AFDD2E345E3F000C161D /* ChatMessage.swift */,
+				FCD91A482DFF9CB50076EB4D /* Assets.xcassets */,
+				FC98A61F2E14A17900DC2B18 /* BlurView.swift */,
+				FCD91A762E0088E50076EB4D /* BuddyCard.swift */,
+				FCEAC1742E34816B00F28CC3 /* BuddyModel.swift */,
+				FC829B402E27455A0064C242 /* BuddyChatManager.swift */,
+				FC98A6192E143E7C00DC2B18 /* BuddyChatView.swift */,
+				FCD91A742E0088CF0076EB4D /* BuddyDock.swift */,
+				FCA452822E3195D700A52741 /* CosmicScoutModels.swift */,
+				FC98A6212E14ADFA00DC2B18 /* BuddyIntervalManager.swift */,
+				FCCE19B62E0606B3001F7C07 /* BuddyMessenger.swift */,
+				FC9F592A2E01CEF800224969 /* BuddyWindowManager.swift */,
+				FC98A61D2E14A0E200DC2B18 /* BuddyWithInterval.swift */,
+				FCD91A462DFF9CAF0076EB4D /* ContentView.swift */,
+				FC007D132E299A07005F52A6 /* CosmicScoutDataFetcher.swift */,
+				FC2EAC622E207AEE00B3F32E /* FirstLaunchPromptView.swift */,
+				FC829B3E2E26F8550064C242 /* GmailAPI.swift */,
+				FCA34CB62E385B37008DC4DF /* NotificationManager.swift */,
+				FCC994312E1ED01B00CD3751 /* GrowingTextView.swift */,
+				FC007D062E2870BF005F52A6 /* LeoPalCalendarChecker.swift */,
+				FC2427F22E2C38DE00EFE446 /* GoogleCalendarAPI.swift */,
+				FC829B3C2E26F7AF0064C242 /* LeoPalEmailChecker.swift */,
+				FC9F07592E2B3D8F00F62146 /* LocationManager.swift */,
+				FC2EAC612E207AEE00B3F32E /* MainLeoPalView.swift */,
+				FC98A6172E143E6900DC2B18 /* MessageBubble.swift */,
+				FC007D0F2E28A061005F52A6 /* MessageHistoryManager.swift */,
+				FCC9942F2E1ED00A00CD3751 /* MessageInputView.swift */,
+				FCCA13552E24A60400379AAF /* OAuthConfig.swift */,
+				FC2EAC602E207AEE00B3F32E /* OAuthManager.swift */,
+				FCD91A4A2DFF9CB50076EB4D /* Preview Content */,
+				FC829B3A2E26F79B0064C242 /* ReminderDatabase.swift */,
+				FCD91A6F2E0087DF0076EB4D /* Resources */,
+				FCCE19B02E05FEEA001F7C07 /* ScreenOCR.swift */,
+				FCCE19B42E060474001F7C07 /* Secrets.plist */,
+				FC007D082E288B87005F52A6 /* String+Markdown.swift */,
+			);
+			path = AIBuddy;
+			sourceTree = "<group>";
+		};
+		FCD91A4A2DFF9CB50076EB4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FCD91A4B2DFF9CB50076EB4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCD91A552DFF9CB50076EB4D /* AIBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCD91A562DFF9CB50076EB4D /* AIBuddyTests.swift */,
+			);
+			path = AIBuddyTests;
+			sourceTree = "<group>";
+		};
+		FCD91A5F2DFF9CB50076EB4D /* AIBuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCD91A602DFF9CB50076EB4D /* AIBuddyUITests.swift */,
+				FCD91A622DFF9CB50076EB4D /* AIBuddyUITestsLaunchTests.swift */,
+			);
+			path = AIBuddyUITests;
+			sourceTree = "<group>";
+		};
+		FCD91A6F2E0087DF0076EB4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE19AE2E0520D2001F7C07 /* buddyPositions.json */,
+				FCD91A702E00883C0076EB4D /* buddies.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCD91A402DFF9CAF0076EB4D /* AIBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD91A662DFF9CB50076EB4D /* Build configuration list for PBXNativeTarget "AIBuddy" */;
+			buildPhases = (
+				FCD91A3D2DFF9CAF0076EB4D /* Sources */,
+				FCD91A3E2DFF9CAF0076EB4D /* Frameworks */,
+				FCD91A3F2DFF9CAF0076EB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIBuddy;
+			packageProductDependencies = (
+				FC30AFD82E344F5B000C161D /* AppAuth */,
+				FC30AFDB2E344F6D000C161D /* GoogleGenerativeAI */,
+			);
+			productName = AIBuddy;
+			productReference = FCD91A412DFF9CAF0076EB4D /* AIBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCD91A512DFF9CB50076EB4D /* AIBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD91A692DFF9CB50076EB4D /* Build configuration list for PBXNativeTarget "AIBuddyTests" */;
+			buildPhases = (
+				FCD91A4E2DFF9CB50076EB4D /* Sources */,
+				FCD91A4F2DFF9CB50076EB4D /* Frameworks */,
+				FCD91A502DFF9CB50076EB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCD91A542DFF9CB50076EB4D /* PBXTargetDependency */,
+			);
+			name = AIBuddyTests;
+			productName = AIBuddyTests;
+			productReference = FCD91A522DFF9CB50076EB4D /* AIBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCD91A5B2DFF9CB50076EB4D /* AIBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD91A6C2DFF9CB50076EB4D /* Build configuration list for PBXNativeTarget "AIBuddyUITests" */;
+			buildPhases = (
+				FCD91A582DFF9CB50076EB4D /* Sources */,
+				FCD91A592DFF9CB50076EB4D /* Frameworks */,
+				FCD91A5A2DFF9CB50076EB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCD91A5E2DFF9CB50076EB4D /* PBXTargetDependency */,
+			);
+			name = AIBuddyUITests;
+			productName = AIBuddyUITests;
+			productReference = FCD91A5C2DFF9CB50076EB4D /* AIBuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD91A392DFF9CAF0076EB4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FCD91A402DFF9CAF0076EB4D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FCD91A512DFF9CB50076EB4D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FCD91A402DFF9CAF0076EB4D;
+					};
+					FCD91A5B2DFF9CB50076EB4D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FCD91A402DFF9CAF0076EB4D;
+					};
+				};
+			};
+			buildConfigurationList = FCD91A3C2DFF9CAF0076EB4D /* Build configuration list for PBXProject "AIBuddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCD91A382DFF9CAF0076EB4D;
+			packageReferences = (
+				FC007D152E29B34F005F52A6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FC30AFD72E344F5B000C161D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
+				FC30AFDA2E344F6D000C161D /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
+			productRefGroup = FCD91A422DFF9CAF0076EB4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCD91A402DFF9CAF0076EB4D /* AIBuddy */,
+				FCD91A512DFF9CB50076EB4D /* AIBuddyTests */,
+				FCD91A5B2DFF9CB50076EB4D /* AIBuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCD91A3F2DFF9CAF0076EB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD91A712E00883C0076EB4D /* buddies.json in Resources */,
+				FCCE19B52E060474001F7C07 /* Secrets.plist in Resources */,
+				FCD91A4C2DFF9CB50076EB4D /* Preview Assets.xcassets in Resources */,
+				FCD91A492DFF9CB50076EB4D /* Assets.xcassets in Resources */,
+				FCCE19AF2E0520D2001F7C07 /* buddyPositions.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD91A502DFF9CB50076EB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD91A5A2DFF9CB50076EB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCD91A3D2DFF9CAF0076EB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC98A61E2E14A0E200DC2B18 /* BuddyWithInterval.swift in Sources */,
+				FCC994302E1ED00A00CD3751 /* MessageInputView.swift in Sources */,
+				FC98A6202E14A17900DC2B18 /* BlurView.swift in Sources */,
+				FC2427F32E2C38DE00EFE446 /* GoogleCalendarAPI.swift in Sources */,
+				FC30AFDE2E345E3F000C161D /* ChatMessage.swift in Sources */,
+				FCC994322E1ED01B00CD3751 /* GrowingTextView.swift in Sources */,
+				FC9F075A2E2B3D8F00F62146 /* LocationManager.swift in Sources */,
+				FC007D102E28A061005F52A6 /* MessageHistoryManager.swift in Sources */,
+				FCD91A472DFF9CAF0076EB4D /* ContentView.swift in Sources */,
+				FC829B3F2E26F8550064C242 /* GmailAPI.swift in Sources */,
+				FC98A61A2E143E7C00DC2B18 /* BuddyChatView.swift in Sources */,
+				FCD91A772E0088E50076EB4D /* BuddyCard.swift in Sources */,
+				FC2EAC632E207AEE00B3F32E /* OAuthManager.swift in Sources */,
+				FC829B3B2E26F79B0064C242 /* ReminderDatabase.swift in Sources */,
+				FCCA13562E24A60400379AAF /* OAuthConfig.swift in Sources */,
+				FCA34CB72E385B37008DC4DF /* NotificationManager.swift in Sources */,
+				FC9F592B2E01CEF800224969 /* BuddyWindowManager.swift in Sources */,
+				FC2EAC642E207AEE00B3F32E /* MainLeoPalView.swift in Sources */,
+				FC829B412E27455A0064C242 /* BuddyChatManager.swift in Sources */,
+				FC007D072E2870C0005F52A6 /* LeoPalCalendarChecker.swift in Sources */,
+				FCCE19B72E0606B3001F7C07 /* BuddyMessenger.swift in Sources */,
+				FCEAC1752E34816B00F28CC3 /* BuddyModel.swift in Sources */,
+				FC98A6222E14ADFA00DC2B18 /* BuddyIntervalManager.swift in Sources */,
+				FC2EAC652E207AEE00B3F32E /* FirstLaunchPromptView.swift in Sources */,
+				FCCE19B12E05FEEA001F7C07 /* ScreenOCR.swift in Sources */,
+				FC829B3D2E26F7AF0064C242 /* LeoPalEmailChecker.swift in Sources */,
+				FCD91A452DFF9CAF0076EB4D /* AIBuddyApp.swift in Sources */,
+				FCCE19B32E05FFB5001F7C07 /* AIReactionEngine.swift in Sources */,
+				FC007D142E299A07005F52A6 /* CosmicScoutDataFetcher.swift in Sources */,
+				FC007D092E288B87005F52A6 /* String+Markdown.swift in Sources */,
+				FCD91A752E0088CF0076EB4D /* BuddyDock.swift in Sources */,
+				FC98A6182E143E6900DC2B18 /* MessageBubble.swift in Sources */,
+				FCA452832E3195D700A52741 /* CosmicScoutModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD91A4E2DFF9CB50076EB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD91A572DFF9CB50076EB4D /* AIBuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD91A582DFF9CB50076EB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD91A612DFF9CB50076EB4D /* AIBuddyUITests.swift in Sources */,
+				FCD91A632DFF9CB50076EB4D /* AIBuddyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCD91A542DFF9CB50076EB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCD91A402DFF9CAF0076EB4D /* AIBuddy */;
+			targetProxy = FCD91A532DFF9CB50076EB4D /* PBXContainerItemProxy */;
+		};
+		FCD91A5E2DFF9CB50076EB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCD91A402DFF9CAF0076EB4D /* AIBuddy */;
+			targetProxy = FCD91A5D2DFF9CB50076EB4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCD91A642DFF9CB50076EB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCD91A652DFF9CB50076EB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FCD91A672DFF9CB50076EB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIBuddy/AIBuddy.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AIBuddy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs access to your calendar to manage events and provide proactive reminders based on your schedule.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Cosmic Scout needs your location to show you visible satellite passes above your current position";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "This app needs access to your reminders to help you organize your tasks and create new reminders.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Divyansh-Gupta.AIBuddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FCD91A682DFF9CB50076EB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIBuddy/AIBuddy.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AIBuddy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs access to your calendar to manage events and provide proactive reminders based on your schedule.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Cosmic Scout needs your location to show you visible satellite passes above your current position";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "This app needs access to your reminders to help you organize your tasks and create new reminders.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Divyansh-Gupta.AIBuddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FCD91A6A2DFF9CB50076EB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Divyansh-Gupta.AIBuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIBuddy";
+			};
+			name = Debug;
+		};
+		FCD91A6B2DFF9CB50076EB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Divyansh-Gupta.AIBuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIBuddy";
+			};
+			name = Release;
+		};
+		FCD91A6D2DFF9CB50076EB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Divyansh-Gupta.AIBuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AIBuddy;
+			};
+			name = Debug;
+		};
+		FCD91A6E2DFF9CB50076EB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Divyansh-Gupta.AIBuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AIBuddy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCD91A3C2DFF9CAF0076EB4D /* Build configuration list for PBXProject "AIBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD91A642DFF9CB50076EB4D /* Debug */,
+				FCD91A652DFF9CB50076EB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD91A662DFF9CB50076EB4D /* Build configuration list for PBXNativeTarget "AIBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD91A672DFF9CB50076EB4D /* Debug */,
+				FCD91A682DFF9CB50076EB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD91A692DFF9CB50076EB4D /* Build configuration list for PBXNativeTarget "AIBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD91A6A2DFF9CB50076EB4D /* Debug */,
+				FCD91A6B2DFF9CB50076EB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD91A6C2DFF9CB50076EB4D /* Build configuration list for PBXNativeTarget "AIBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD91A6D2DFF9CB50076EB4D /* Debug */,
+				FCD91A6E2DFF9CB50076EB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC007D152E29B34F005F52A6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.2.4;
+			};
+		};
+		FC30AFD72E344F5B000C161D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 1.6.2;
+			};
+		};
+		FC30AFDA2E344F6D000C161D /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC30AFD82E344F5B000C161D /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC30AFD72E344F5B000C161D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		FC30AFDB2E344F6D000C161D /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC30AFDA2E344F6D000C161D /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FCD91A392DFF9CAF0076EB4D /* Project object */;
+}

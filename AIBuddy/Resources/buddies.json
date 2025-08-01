@@ -1,0 +1,30 @@
+[
+  {
+    "id": "leopal",
+    "name": "Leo Pal",
+    "avatar": "avatar1",
+    "personality": "motivating and upbeat",
+    "interval": 20
+  },
+  {
+    "id": "spacecat",
+    "name": "Space Cat",
+    "avatar": "avatar2",
+    "personality": "goofy and sarcastic",
+    "interval": 90
+  },
+  {
+    "id": "zenbunny",
+    "name": "Zen Bunny",
+    "avatar": "avatar3",
+    "personality": "calm and mindful",
+    "interval": 75
+  },
+  {
+    "id": "cosmicscout",
+    "name": "Cosmic Scout",
+    "avatar": "avatar4",
+    "personality": "enthusiastic, awe-struck, and knowledgeable about space",
+    "interval": 180
+  }
+]
